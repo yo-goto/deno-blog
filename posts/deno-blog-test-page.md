@@ -1,14 +1,27 @@
 ---
-title: deno-blogのテストページ
-publish_date: 2022-09-15
 date: 2022-09-15
 modified: 2022-09-15
 tags: [deno, Testing]
-aliases:
-  - deno-blogのテストページ
+aliases: deno-blogのテストページ
+title: deno-blogのテストページ
+publish_date: 2022-09-15
 ---
 
-これはテストですよ。
+## コードブロック
+
+JavaScript
+
+```js
+const p = "string";
+```
+
+TypeScript
+
+```ts
+const p = "string" as string;
+```
+
+TSX
 
 ```tsx
 const p = "string";
@@ -17,7 +30,7 @@ const Page = (): NextPage => {
 };
 ```
 
-ファイル名を付けてみる。
+ファイル名を付けると syntax-highlight されない。
 
 ```tsx:test.tsx
 const p = "string";
@@ -26,9 +39,9 @@ const Page = (): NextPage => {
 };
 ```
 
-diff を作ってみる。
+## diff
 
-```diff tsx
+```diff
 const p = "string";
 const Page = (): NextPage => {
 - return <div>test</div>
@@ -40,6 +53,8 @@ const Page = (): NextPage => {
 };
 ```
 
+## 画像表示
+
 `posts/images/` 配下にある画像を表示してみる。
 
 マークダウン表示。
@@ -49,3 +64,9 @@ const Page = (): NextPage => {
 ```
 
 ![test image](images/img_testImage.jpg)
+
+## リンク
+
+wiki link [[deno-blog-making|deno_blog の作り方]]
+
+通常の markdown リンク [deno-blog-making](deno-blog-making)
