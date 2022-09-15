@@ -1,6 +1,7 @@
 /** @jsx h */
 
 import "./prism-extension.ts";
+import { zennIcon } from "./components.tsx";
 
 blog({
   title: "pd1's blog",
@@ -10,9 +11,12 @@ blog({
   // footer: <footer>Your custom footer</footer>,
   avatar: "https://deno-avatar.deno.dev/avatar/54eaa7.svg",
   avatarClass: "rounded-full",
-  author: "PADAone",
   lang: "ja",
-
+  links: [
+    { title: "Zenn", url: "https://zenn.dev/estra", icon: zennIcon },
+    { title: "GitHub", url: "https://github.com/yo-goto" },
+    { title: "Twitter", url: "https://twitter.com/pd1xx" },
+  ],
   // middlewares: [
 
     // If you want to set up Google Analytics, paste your GA key here.
