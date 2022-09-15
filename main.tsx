@@ -1,6 +1,6 @@
 /** @jsx h */
 
-import blog, { ga, redirects, h } from "blog";
+import "./prism-extension.ts";
 
 blog({
   title: "pd1's blog",
