@@ -1,15 +1,17 @@
 /** @jsx h */
 
+import blog, { ga, h, redirects } from "blog";
 import "./prism-extension.ts";
 import { zennIcon } from "./components.tsx";
 
 blog({
+  author: "PADAone",
   title: "pd1's blog",
   description: "PADAone's Personal Blog",
   // header: <header>Your custom header</header>,
   // section: <section>Your custom section</section>,
   // footer: <footer>Your custom footer</footer>,
-  avatar: "https://deno-avatar.deno.dev/avatar/54eaa7.svg",
+  avatar: "https://deno-avatar.deno.dev/avatar/83b819.svg",
   avatarClass: "rounded-full",
   lang: "ja",
   links: [
@@ -19,14 +21,14 @@ blog({
   ],
   // middlewares: [
 
-    // If you want to set up Google Analytics, paste your GA key here.
-    // ga("UA-XXXXXXXX-X"),
+  // If you want to set up Google Analytics, paste your GA key here.
+  // ga("UA-XXXXXXXX-X"),
 
-    // If you want to provide some redirections, you can specify them here,
-    // pathname specified in a key will redirect to pathname in the value.
-    // redirects({
-    //  "/hello_world.html": "/hello_world",
-    // }),
+  // If you want to provide some redirections, you can specify them here,
+  // pathname specified in a key will redirect to pathname in the value.
+  // redirects({
+  //  "/hello_world.html": "/hello_world",
+  // }),
 
   // ]
 });
