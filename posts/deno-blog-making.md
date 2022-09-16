@@ -1,10 +1,10 @@
 ---
+title: deno_blog の作り方
 date: 2022-09-15
-modified: 2022-09-15
+modified: 2022-09-16
+publish_date: 2022-09-15
 tags: [deno]
 aliases: deno_blog の作り方
-title: deno_blog の作り方
-publish_date: 2022-09-15
 ---
 
 ## deno_blog とは
@@ -36,8 +36,7 @@ $ deno run -r --allow-read --allow-write https://deno.land/x/blog/init.ts .
 ├── import_map.json
 ├── main.tsx
 └── posts/
-    ├── deno-blog-making.md
-    └── deno-blog-test-page.md
+    └── hello_world.md
 ```
 
 `main.tsx` で基本となる設定を行っておく。`unocss` でのカスタマイズを行わないなら当該箇所は書かなく良い。
@@ -134,4 +133,26 @@ src: https://deno.com/deploy/docs/using-jsx
 
 Deno Deploy ではすぐに JSX と TSX を利用できる。
 
-> [!NOTE] Deno での JSX の使用方法についてはついては後で詳しく調べる
+> [!NOTE]
+> Deno での JSX の使用方法についてはついては後で詳しく調べる
+
+## なにがよいのか
+
+ファイル数が少なくて済むのが非常によい。最小構成の場合には、以下のものしか必要ない。
+
+```sh
+./
+├── .vscode/
+│  └── settings.json
+├── deno.jsonc
+├── import_map.json
+├── main.tsx
+└── posts/
+    └── hello_world.md
+```
+
+画像の取り扱いが比較的に自由。
+
+`posts` ディレクトリ内に `images` ディレクトリなどをつくってまとめてそこで画像を管理すればノート内でプレビューしつつつも一元管理できる。
+
+Hugo だとこのようなことができないのでかなり楽。また、`node_modules` フォルダが無いのが一番良い。このフォルダ内部にノートが送られてしまう心配がまったくない。通常はこのフォルダに送られてしまうと見つけるのはほぼ不可能になる。

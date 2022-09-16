@@ -1,10 +1,10 @@
 ---
+title: deno_blog のテストページ
 date: 2022-09-15
-modified: 2022-09-15
-tags: [deno, Testing]
-aliases: deno-blogのテストページ
-title: deno-blogのテストページ
+modified: 2022-09-16
 publish_date: 2022-09-15
+tags: [deno, Testing]
+aliases: deno_blog のテストページ
 ---
 
 ## コードブロック
@@ -41,7 +41,7 @@ const Page = (): NextPage => {
 
 ## diff
 
-```diff
+```diff tsx
 const p = "string";
 const Page = (): NextPage => {
 - return <div>test</div>
