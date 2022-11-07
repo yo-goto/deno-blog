@@ -1,8 +1,10 @@
 ---
 title: deno_blog の作り方
+cssclass: blog-deno
 date: 2022-09-15
-modified: 2022-09-16
+modified: 2022-11-07
 publish_date: 2022-09-15
+AutoNoteMover: disable
 tags: [deno]
 aliases: deno_blog の作り方
 ---
@@ -14,6 +16,14 @@ Deno の開発者である Ryan Dahl 氏のブログテンプレート(ボイラ
 以下の Zenn の記事にて作り方が詳細に解説されていたので参考にした。
 
 [【Deno】秒で作ってデプロイする Markdown ベースのブログ](https://zenn.dev/k41531/articles/9897a0f8fce1b3)
+
+公式のリポジトリは以下のURLから。
+
+https://github.com/denoland/deno_blog
+
+作成した deno-blog サイトURLは以下。
+
+https://yo-goto-deno-blog.deno.dev
 
 ## 作り方
 
@@ -37,6 +47,12 @@ $ deno run -r --allow-read --allow-write https://deno.land/x/blog/init.ts .
 ├── main.tsx
 └── posts/
     └── hello_world.md
+```
+
+以下のコマンドでライブリロードできるローカルサーバーを起動。
+
+```sh
+deno task dev
 ```
 
 `main.tsx` で基本となる設定を行っておく。`unocss` でのカスタマイズを行わないなら当該箇所は書かなく良い。
@@ -71,8 +87,7 @@ blog({
 });
 ```
 
-コードブロックのシンタックスハイライトが C 言語しかデフォルトでは入っていないので、使用するものを以下のサイトにリストアップされているものから選んで
-`import` しておく。
+コードブロックのシンタックスハイライトが C 言語しかデフォルトでは入っていないので、使用するものを以下のサイトにリストアップされているものから選んで `import` しておく。
 
 https://unpkg.com/browse/prismjs@1.27.0/components/
 

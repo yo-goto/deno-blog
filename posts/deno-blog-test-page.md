@@ -1,8 +1,10 @@
 ---
 title: deno_blog のテストページ
 date: 2022-09-15
-modified: 2022-09-16
+cssclass: blog-deno
+modified: 2022-11-07
 publish_date: 2022-09-15
+AutoNoteMover: disable
 tags: [deno, Testing]
 aliases: deno_blog のテストページ
 ---
@@ -69,4 +71,4 @@ const Page = (): NextPage => {
 
 wiki link [[deno-blog-making|deno_blog の作り方]]
 
-通常の markdown リンク [deno-blog-making](deno-blog-making)
+通常の markdown リンク [deno-blog-making](deno-blog-making.md)
