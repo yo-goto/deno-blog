@@ -2,7 +2,7 @@
 title: deno_blog の作り方
 cssclass: blog-deno
 date: 2022-09-15
-modified: 2022-11-07
+modified: 2022-11-22
 publish_date: 2022-09-15
 AutoNoteMover: disable
 tags: [deno]
@@ -17,11 +17,11 @@ Deno の開発者である Ryan Dahl 氏のブログテンプレート(ボイラ
 
 [【Deno】秒で作ってデプロイする Markdown ベースのブログ](https://zenn.dev/k41531/articles/9897a0f8fce1b3)
 
-公式のリポジトリは以下のURLから。
+公式のリポジトリは以下の URL から。
 
 https://github.com/denoland/deno_blog
 
-作成した deno-blog サイトURLは以下。
+作成した deno-blog サイト URL は以下。
 
 https://yo-goto-deno-blog.deno.dev
 

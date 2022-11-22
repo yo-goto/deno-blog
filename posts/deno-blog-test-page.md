@@ -1,8 +1,8 @@
 ---
 title: deno_blog のテストページ
-date: 2022-09-15
 cssclass: blog-deno
-modified: 2022-11-07
+date: 2022-09-15
+modified: 2022-11-10
 publish_date: 2022-09-15
 AutoNoteMover: disable
 tags: [deno, Testing]
@@ -43,7 +43,21 @@ const Page = (): NextPage => {
 
 ## diff
 
+コードブロックに `diff tsx` を指定。
 ```diff tsx
+const p = "string";
+const Page = (): NextPage => {
+- return <div>test</div>
++ return (
++   <div>
++     test
++   </div>
++ );
+};
+```
+
+コードブロックに `diff` のみを指定。
+```diff
 const p = "string";
 const Page = (): NextPage => {
 - return <div>test</div>
@@ -71,4 +85,4 @@ const Page = (): NextPage => {
 
 wiki link [[deno-blog-making|deno_blog の作り方]]
 
-通常の markdown リンク [deno-blog-making](deno-blog-making.md)
+通常の markdown リンク: [deno-blog-making](deno-blog-making.md)
